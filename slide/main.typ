@@ -94,4 +94,101 @@ When comparing two values of different types, JavaScript will try to convert one
 
 == Strict Comparison
 
+```js
+1 === 1 // true
+1 === 2 // false
+
+1 !== 1 // false
+1 !== 2 // true
+
+1 < 2 // true
+1 > 2 // false
+
+const isEqual = 11 === 10 // isEqual = false
+```
+
 #hint("Use strict comparison whenever possible")
+
+== Conditional Statements
+
+```js
+if (condition) {
+    // do something
+} else if (condition) {
+    // do something else
+} else {
+    // do something else
+}
+```
+=== Example
+
+```js
+const x = 1
+if (x === 1) {
+    console.log("x is 1")
+} else if (x === 2) {
+    console.log("x is 2")
+} else {
+    console.log("x is not 1 or 2")
+}
+```
+
+== Logical Operators
+
+```js
+&& // and
+|| // or
+! // not
+```
+
+=== Example
+
+```js
+const x = 1
+const y = 2
+if (x === 1 && y === 2) {
+    console.log("x is 1 and y is 2")
+}
+
+if (x === 1 || y === 2) {
+    console.log("x is 1 or y is 2")
+}
+
+if (!(x === 1)) {
+    console.log("x is not 1")
+}
+```
+
+== Loops
+
+```js
+while (condition) {
+    // do something
+}
+
+do {
+    // do something
+} while (condition)
+
+for (let i = 0; i < 10; i++) {
+    // do something
+}
+```
+
+=== Example
+
+```js
+let i = 0
+while (i < 10) {
+    console.log(i)
+    i++
+}
+
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+```
+
+== Exercise
+
+Link will be posted on Discord
