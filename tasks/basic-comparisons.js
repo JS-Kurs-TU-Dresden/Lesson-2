@@ -24,3 +24,27 @@ const resultG = !(true && false);
 
 // resultH should be false
 const resultH = true && (false || true) && false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Please do not change the code below. This code is used for testing your solution.
+
+export {
+    resultA, resultB, resultC, resultD, resultE, resultF, resultG, resultH
+}

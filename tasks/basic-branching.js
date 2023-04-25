@@ -3,10 +3,10 @@
 
 let apples = 5;
 let oranges = 3;
-let bananas = 2;
+let bananas = 7;
 
 // Should print "I have x apples" if there is more than 1 apple
-if (apples > 1) {
+if (apples > 0) {
     console.log("I have " + apples + " apples");
 }
 

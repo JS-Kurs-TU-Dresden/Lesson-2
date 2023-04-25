@@ -43,9 +43,41 @@ while (true) {
     let continents = prompt("How many continents are there? ")
     if (continents == 7) {
         console.log("Correct!")
+        break
     } else if (continents < 7) {
         console.log("Too low!")
     } else if (continents > 7) {
         console.log("Too high!")
+    }
+}
+
+while (true) {
+    let capital = prompt("What is the capital of Germany? ")
+    if (capital == "Berlin") {
+        console.log("Correct!")
+        break
+    } else {
+        console.log("Wrong!")
+    }
+}
+
+while (true) {
+    let number = prompt("Enter a number between 1 and 10: ")
+    if (number % 2 == 0) {
+        let evenOrOdd = prompt("Is the number even or odd? ")
+        if (evenOrOdd == "even") {
+            console.log("Correct!")
+            break
+        } else {
+            console.log("Wrong!")
+        }
+    } else {
+        let evenOrOdd = prompt("Is the number even or odd? ")
+        if (evenOrOdd == "odd") {
+            console.log("Correct!")
+            break
+        } else {
+            console.log("Wrong!")
+        }
     }
 }

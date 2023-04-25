@@ -1,33 +1,38 @@
 import { expect, test, describe } from 'vitest'
-import { sum, difference, product, quotient, remainder, negation, exponentiation } from '../tasks/basic-math.js'
+import { resultA, resultB, resultC, resultD, resultE, resultF, resultG, resultH } from '../tasks/basic-comparisons.js'
 
-describe('basic math', () => {
-    
-    test('sum', async () => {
-        expect(sum).toBe(5)
+describe('basic comparisons', () => {
+
+    test('resultA should be true', () => {
+        expect(resultA).toBe(true)
     })
 
-    test('difference', async () => {
-        expect(difference).toBe(-1)
+    test('resultB should be false', () => {
+        expect(resultB).toBe(false)
     })
 
-    test('product', async () => {
-        expect(product).toBe(6)
+    test('resultC should be true', () => {
+        expect(resultC).toBe(true)
     })
 
-    test('quotient', async () => {
-        expect(quotient).toBe(0.6666666666666666)
+    test('resultD should be false', () => {
+        expect(resultD).toBe(false)
     })
 
-    test('remainder', async () => {
-        expect(remainder).toBe(2)
+    test('resultE should be true', () => {
+        expect(resultE).toBe(true)
     })
 
-    test('negation', async () => {
-        expect(negation).toBe(-2)
+    test('resultF should be false', () => {
+        expect(resultF).toBe(false)
     })
 
-    test('exponentiation', async () => {
-        expect(exponentiation).toBe(8)
+    test('resultG should be true', () => {
+        expect(resultG).toBe(true)
     })
+
+    test('resultH should be false', () => {
+        expect(resultH).toBe(false)
+    })
+
 })

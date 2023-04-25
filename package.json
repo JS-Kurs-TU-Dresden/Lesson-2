@@ -10,7 +10,6 @@
     "author": "Nils Twelker",
     "license": "ISC",
     "devDependencies": {
-        "@vitest/ui": "^0.29.8",
         "vite": "^4.2.1",
         "vitest": "^0.29.3"
     }
