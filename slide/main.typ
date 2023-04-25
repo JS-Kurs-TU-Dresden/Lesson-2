@@ -66,6 +66,7 @@ https://discord.gg/W3QJrBwD6Z
 - Conditional Statements
 - Loops
 - Logical Operators
+- Prompts
 
 == Loose Comparison
 
