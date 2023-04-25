@@ -235,6 +235,7 @@ console.log("Your name is: " + name)
 Goal is to get 100 Points.
 #columns(2, [
 - `basic-branching` 20
+- `basic-logical-operators` 20
 - `basic-comparisons` 20
 - `basic-loops` 20
 - `basic-prompt` 20

@@ -1,29 +1,69 @@
-// More information can be found here: https://javascript.info/comparison
+// More info can be found here: https://javascript.info/comparison
+
 // Fill in the gaps (___) to make the code work
 
+// Should print "I have x apples" if there is more than 0 apple
+
+// Only use the following operators: ==, ===
+
 // resultA should be true
-const resultA = true ___ true;
+const resultA = 1 == '1';
 
 // resultB should be false
-const resultB = true && ___;
+const resultB = 4 === '4';
 
 // resultC should be true
-const resultC = false ___ true;
+const resultC = true == '1'
 
-// resultD should be false
-const resultD = ___ || ___;
+// resultD should be true
+const resultD = false == '0';
 
 // resultE should be true
-const resultE = !___;
+const resultE = 0 == '';
 
 // resultF should be false
-const resultF = !(___ || false);
+const resultF = 0 === '';
 
 // resultG should be true
-const resultG = !(true && ___);
+const resultG = 0 == false;
 
 // resultH should be false
-const resultH = true && (___ || true) && ___;
+const resultH = 0 === false;
+
+// resultI should be false
+const resultI = 0 == null;
+
+// resultJ should be true
+const resultJ = undefined == null;
+
+// resultK should be false
+const resultK = undefined === null;
+
+// Only use the following operators: >, <, >=, <=
+
+// resultL should be true
+const resultL = 1 > 0;
+
+// resultM should be false
+const resultM = 1 < 0;
+
+// resultN should be true
+const resultN = 1 >= 1;
+
+// resultO should be true
+const resultO = "A" < "B";
+
+// resultP should be true
+const resultP = "Hallo" < "Hello";
+
+// resultQ should be true
+const resultQ = "Wow" >= "Wow";
+
+
+
+
+
+
 
 
 
@@ -46,5 +86,5 @@ const resultH = true && (___ || true) && ___;
 // Please do not change the code below. This code is used for testing your solution.
 
 export {
-    resultA, resultB, resultC, resultD, resultE, resultF, resultG, resultH
+    resultA, resultB, resultC, resultD, resultE, resultF, resultG, resultH, resultI, resultJ, resultK, resultL, resultM, resultN, resultO, resultP, resultQ
 }
