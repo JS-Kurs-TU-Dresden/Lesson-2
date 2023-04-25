@@ -56,7 +56,7 @@ https://discord.gg/W3QJrBwD6Z
 - Operators `+`, `-`, `*`, `/`, `%`
 - Debugging with #raw("console.log()", lang: "js")
 - Comments `//` and `/* */`
-- Run using `node file.js` and test with `npm run test file`
+- Run using `node file.js` and test with `npm test file`
 
 #hint("Dont forget to commit and push your changes")
 
@@ -85,13 +85,28 @@ const isEqual = 11 == 10 // isEqual = false
 
 When comparing two values of different types, JavaScript will try to convert one type into the other type. 
 
- ```js
+#columns(2, [
+     ```js
 1 == "1" // true
 0 == false // true
 
-"false" != true // false
+"false" != true // true
 1 != true // false
+
+"1" < 2 // true
+true > 0 // true
 ```
+
+#colbreak()
+
+```js
+null == undefined // true
+
+"" == false // true
+"0" == false // true
+"false" == false // false
+```
+])
 
 == Strict Comparison
 
@@ -99,12 +114,12 @@ When comparing two values of different types, JavaScript will try to convert one
 1 === 1 // true
 1 === 2 // false
 1 !== 1 // false
-1 !== 2 // true
 
 1 < 2 // true
 1 > 2 // false
 
-const isEqual = 11 === 10 // isEqual = false
+1 === "1" // false
+0 === false // false
 ```
 
 #hint("Use strict comparison whenever possible")
@@ -198,7 +213,7 @@ for(let i = 0; i < 10; i++) {
 ```
 ])
 
-== Example
+== Examples
 
 ```js
 let i = 0
@@ -210,6 +225,7 @@ while (i < 10) {
 for (let i = 0; i < 10; i++) {
     console.log(i)
 }
+// Both print the numbers 0 to 9
 ```
 
 == Prompt
