@@ -232,6 +232,18 @@ console.log("Your name is: " + name)
     The function always returns a string.
 ])
 
+== Assignment
+
+Link in the Discord channel.
+
+Ways to open the assignment:
+
+Click on `Open in Visual Studio Code` to run the code on your PC.
+
+Use the url e.g. `https://github.com/JS-Kurs-TU-Dresden/lesson-2-Nitwel` but replace the `.com` with `.dev` to open the assignment in the browser.
+
+
+
 == Tasks and Points
 Goal is to get 100 Points.
 #columns(2, [
@@ -239,11 +251,10 @@ Goal is to get 100 Points.
 - `basic-logical-operators` 20
 - `basic-comparisons` 20
 - `basic-loops` 20
-- `basic-prompt` 20
+- `basic-prompt` 10
 - `calculator` 30
 - `fibonacci` 30
 - `fizzbuzz` 30
 - `pyramid` 30
 - `quiz` 40
-- `rock-paper-scissors` 40
 ])
