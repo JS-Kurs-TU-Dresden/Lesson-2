@@ -231,6 +231,17 @@ console.log("Your name is: " + name)
     The function always returns a string.
 ])
 
-== Exercise
-
-Link will be posted on Discord
+== Tasks and Points
+Goal is to get 100 Points.
+#columns(2, [
+- `basic-branching` 20
+- `basic-comparisons` 20
+- `basic-loops` 20
+- `basic-prompt` 20
+- `calculator` 30
+- `fibonacci` 30
+- `fizzbuzz` 30
+- `pyramid` 30
+- `quiz` 40
+- `rock-paper-scissors` 40
+])
