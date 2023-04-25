@@ -7,57 +7,57 @@
 // Only use the following operators: ==, ===
 
 // resultA should be true
-const resultA = 1 == '1';
+const resultA = 1 ___ '1';
 
 // resultB should be false
-const resultB = 4 === '4';
+const resultB = 4 ___ '4';
 
 // resultC should be true
-const resultC = true == '1'
+const resultC = true ___ '1'
 
 // resultD should be true
-const resultD = false == '0';
+const resultD = false ___ '0';
 
 // resultE should be true
-const resultE = 0 == '';
+const resultE = 0 ___ '';
 
 // resultF should be false
-const resultF = 0 === '';
+const resultF = 0 ___ '';
 
 // resultG should be true
-const resultG = 0 == false;
+const resultG = 0 ___ false;
 
 // resultH should be false
-const resultH = 0 === false;
+const resultH = 0 ___ false;
 
 // resultI should be false
-const resultI = 0 == null;
+const resultI = 0 ___ null;
 
 // resultJ should be true
-const resultJ = undefined == null;
+const resultJ = undefined ___ null;
 
 // resultK should be false
-const resultK = undefined === null;
+const resultK = undefined ___ null;
 
 // Only use the following operators: >, <, >=, <=
 
 // resultL should be true
-const resultL = 1 > 0;
+const resultL = 1 ___ 0;
 
 // resultM should be false
-const resultM = 1 < 0;
+const resultM = 1 ___ 0;
 
 // resultN should be true
-const resultN = 1 >= 1;
+const resultN = 1 ___ 1;
 
 // resultO should be true
-const resultO = "A" < "B";
+const resultO = "A" ___ "B";
 
 // resultP should be true
-const resultP = "Hallo" < "Hello";
+const resultP = "Hallo" ___ "Hello";
 
 // resultQ should be true
-const resultQ = "Wow" >= "Wow";
+const resultQ = "Wow" ___ "Wow";
 
 
 
