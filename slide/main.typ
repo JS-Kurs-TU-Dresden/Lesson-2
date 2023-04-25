@@ -44,7 +44,7 @@
 https://discord.gg/W3QJrBwD6Z
 
 #align(center, [
-    #image("./qrcode3.png", width: 200pt)
+    #image("./qrcode.png", width: 200pt)
 ])
 
 
@@ -56,7 +56,7 @@ https://discord.gg/W3QJrBwD6Z
 - Operators `+`, `-`, `*`, `/`, `%`
 - Debugging with #raw("console.log()", lang: "js")
 - Comments `//` and `/* */`
-- Testing with `npm run test [name]`
+- Run using `node file.js` and test with `npm run test file`
 
 #hint("Dont forget to commit and push your changes")
 
@@ -97,7 +97,6 @@ When comparing two values of different types, JavaScript will try to convert one
 ```js
 1 === 1 // true
 1 === 2 // false
-
 1 !== 1 // false
 1 !== 2 // true
 
@@ -111,6 +110,19 @@ const isEqual = 11 === 10 // isEqual = false
 
 == Conditional Statements
 
+#columns(2, [
+    ```js
+if (condition) {
+    // do something
+}
+
+if (condition) {
+    // do something
+} else {
+    // do something else
+}
+```
+#colbreak()
 ```js
 if (condition) {
     // do something
@@ -120,6 +132,7 @@ if (condition) {
     // do something else
 }
 ```
+])
 === Example
 
 ```js
@@ -137,35 +150,31 @@ if (x === 1) {
 
 ```js
 && // and
+```
+```js
 || // or
+```
+```js
 ! // not
 ```
 
-=== Example
-
 ```js
-const x = 1
-const y = 2
-if (x === 1 && y === 2) {
-    console.log("x is 1 and y is 2")
-}
+const x = 1; const y = 2;
 
-if (x === 1 || y === 2) {
-    console.log("x is 1 or y is 2")
-}
-
-if (!(x === 1)) {
-    console.log("x is not 1")
-}
-```
-
-== Loops
-
-```js
-while (condition) {
+if (x === 1 && y !== 2) {
     // do something
 }
 
+if (!(x === 1) || y === 2) {
+    // do something
+}
+```
+== Loops
+#columns(2, [
+    ```js
+while (condition) {
+    // do something
+}
 do {
     // do something
 } while (condition)
@@ -174,8 +183,21 @@ for (let i = 0; i < 10; i++) {
     // do something
 }
 ```
+#colbreak()
+```js
+while(true) {
+    // do something
+    if (condition) { break }
+}
 
-=== Example
+for(let i = 0; i < 10; i++) {
+    if (condition) { continue }
+    // do something
+}
+```
+])
+
+== Example
 
 ```js
 let i = 0
@@ -188,6 +210,26 @@ for (let i = 0; i < 10; i++) {
     console.log(i)
 }
 ```
+
+== Prompt
+
+Get user input from the console.
+
+```js
+// Needed to access the prompt function
+import { prompt } from "../prompt.js"
+
+const name = prompt("What is your name?")
+console.log("Your name is: " + name)
+```
+
+#hint([
+    The function is normally not available in Node.js.
+])
+
+#hint([
+    The function always returns a string.
+])
 
 == Exercise
 
