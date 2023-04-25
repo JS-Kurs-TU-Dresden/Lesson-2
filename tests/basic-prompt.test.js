@@ -1,13 +1,13 @@
 import { expect, test, describe, vi } from 'vitest'
 
 vi.mock('../prompt.js', () => {
+    let counter = 0
+    const responses = ["John", "18"]
+
     return {
-        prompt: (question) => {
-            if (question === "What is your name? ") {
-                return "John"
-            } else if (question === "What is your age? ") {
-                return "18"
-            }
+        prompt: () => {
+            if (counter >= responses.length) throw new Error("Too many prompts")
+            return responses[counter++]
         }
     }
 })

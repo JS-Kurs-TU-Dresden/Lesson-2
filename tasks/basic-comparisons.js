@@ -2,28 +2,28 @@
 // Fill in the gaps (___) to make the code work
 
 // resultA should be true
-const resultA = true && true;
+const resultA = true ___ true;
 
 // resultB should be false
-const resultB = true && false;
+const resultB = true && ___;
 
 // resultC should be true
-const resultC = false || true;
+const resultC = false ___ true;
 
 // resultD should be false
-const resultD = false || false;
+const resultD = ___ || ___;
 
 // resultE should be true
-const resultE = !false;
+const resultE = !___;
 
 // resultF should be false
-const resultF = !(true || false);
+const resultF = !(___ || false);
 
 // resultG should be true
-const resultG = !(true && false);
+const resultG = !(true && ___);
 
 // resultH should be false
-const resultH = true && (false || true) && false;
+const resultH = true && (___ || true) && ___;
 
 
 

@@ -19,6 +19,7 @@ vi.mock('../prompt.js', () => {
 
     return {
         prompt: () => {
+            if (counter >= responses.length) throw new Error("Too many prompts")
             return responses[counter++]
         }
     }
@@ -28,7 +29,11 @@ describe('quiz', async () => {
 
     const spy = vi.spyOn(console, 'log')
 
-    await import('../tasks/quiz.js')
+    try {
+        await import('../tasks/quiz.js')
+    } catch (e) {
+        console.log(e.message)
+    }
 
     const calls = spy.calls.flat()
 

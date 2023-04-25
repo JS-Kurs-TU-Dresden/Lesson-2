@@ -12,6 +12,7 @@ vi.mock('../prompt.js', () => {
 
     return {
         prompt: () => {
+            if (counter >= responses.length) throw new Error("Too many prompts")
             return responses[counter++]
         }
     }
@@ -21,11 +22,15 @@ describe('calculator', async () => {
 
     const spy = vi.spyOn(console, 'log')
 
-    await import('../tasks/calculator.js')
-    await import('../tasks/calculator.js?buster=1')
-    await import('../tasks/calculator.js?buster=2')
-    await import('../tasks/calculator.js?buster=3')
-    await import('../tasks/calculator.js?buster=4')
+    try {
+        await import('../tasks/calculator.js')
+        await import('../tasks/calculator.js?buster=1')
+        await import('../tasks/calculator.js?buster=2')
+        await import('../tasks/calculator.js?buster=3')
+        await import('../tasks/calculator.js?buster=4')
+    } catch (e) {
+        console.log(e.message)
+    }
 
     const calls = spy.calls.flat()
 

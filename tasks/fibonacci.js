@@ -13,13 +13,3 @@
 // 8
 // 13
 // 21
-
-let a = 0
-let b = 1
-
-for (let i = 0; i < 30; i++) {
-    console.log(a)
-    let c = a + b
-    a = b
-    b = c
-}

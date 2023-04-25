@@ -4,7 +4,7 @@ import { prompt } from '../prompt.js'
 //
 // Hello [name], in 2 years you will be [x] years old.
 
-const name = prompt("What is your name? ")
-const age = prompt("What is your age? ")
+const name = ___
+const age = ___
 
-console.log("Hello " + name + ", in 2 years you will be " + (Number(age) + 2) + " years old.")
+console.log("Hello " + ___ + ", in 2 years you will be " + ___ + " years old.")
